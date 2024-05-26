@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind project 3</title>
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="text-gray-600 body-font bg-hero-pattern h-screen bg-cover bg-center">
+        <nav class="  dark:border-gray-700 sm:px-4 py-2.5 rounded px-14 ">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="/" class="flex items-center">
+                    <span class="self-center text-4xl font-semibold whitespace-nowrap ">
+                        EARTH
+                    </span>
+                </a>
+
+                <div class="flex items-center">
+                    <button id="menu-toggle" type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm  rounded-lg  focus:outline-none focus:ring-2    md:hidden">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger icon -->
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full md:block md:w-auto hidden" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-2xl  rounded md:bg-transparent  md:p-0 dark:text-white"
+                                aria-current="page">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-2xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-2xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-2xl text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <div class="container  mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2  flex justify-center  flex-col md:items-centert text-8xl text-bold md:text-left mb-16 md:mb-0 items-center text-lime-700 text-center">
+                <h1 class="">EARTH</h1>
+                <h3 class="text-4xl pt-4 tracking-widest text-lime-700 px-24">ENDLESS POTENTIAL</h3>
+                <button
+                    class="inline-flex text-white bg-lime-700 border-0 py-2 px-14 mt-10 focus:outline-none hover:bg-green-800 rounded text-lg font-extrabold tracking-wider">EXPLORE</button>
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section 2 start here -->
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+
+
+        </div>
+        <div class="flex flex-wrap   px-20 ">
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="1000">
+                <div class="rounded-lg h-96 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="img/card1.jpeg">
+                </div>
+                <h2 class="text-2xl font-normal title-font text-gray-900 mt-5">WAB Design</h2>
+                <p class="text-base leading-relaxed mt-2">Custom web design for small businesses, we help you capture
+                    new audiences and increase your sales.lorem ya hoo about sanserif .</p>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="1000">
+                <div class="rounded-lg h-96 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="img/card2.jpeg">
+                </div>
+                <h2 class="text-2xl font-normal title-font text-gray-900 mt-5">Graphic Design</h2>
+                <p class="text-base leading-relaxed mt-2">Logos, merchandise and more. Anyone can create nice graphics.
+                    We think it’s better to create memorable oneslorem ya hoo about sanserif .</p>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6" data-aos="flip-right" data-aos-easing="linear"
+                data-aos-duration="1000">
+                <div class="rounded-lg h-96 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="img/card3.jpeg">
+                </div>
+                <h2 class="text-2xl font-normal title-font text-gray-900 mt-5">Content Creation</h2>
+                <p class="text-base leading-relaxed mt-2">Want to attract people to your website? You have to have the
+                    best content in the world. That’s what we do.lorem ya hoo about sanserif .</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- section 3 start here -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 ml-10 font-medium text-gray-900">ABOUT US
+                </h1>
+                <p class="mb-8 from-neutral-50 w-96 ml-10 leading-relaxed">I made it so it is super easy to update and
+                    so that
+                    it
+                    flows
+                    perfectly
+                    with my tutorials. Lots of love and hundreds of
+                    hours went into making it. I hope you love it as much as I do. I wish you the best of luck with your
+                    business, enjoy the
+                    adventure</p>
+
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" data-aos="zoom-in" data-aos-easing="linear"
+                data-aos-duration="1000">
+                <img class="object-cover object-center rounded" alt="hero" src="img/about.jpeg">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section 4 start here -->
+
+    <section class="text-gray-600 body-font bg-fixed top-0 bg-lastbackground h-screen bg-cover bg-center">
+
+        <div class="container  mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2  flex justify-center  flex-col md:items-centert  text-bold md:text-left mb-16 md:mb-0 items-center text-lime-700 text-center">
+                <h1 class="text-4xl text-bold tracking-widest">TALK TO US</h1>
+                <p class=" pt-4 md:w-8/12 text-center text-lg text-lime-700 px-24">Have any questions? We are always
+                    open
+                    to
+                    talk about your business, new projects, creative opportunities and how we can
+                    help you </p>
+                <button
+                    class="inline-flex text-white bg-lime-700 border-0 py-2 px-14 mt-10 focus:outline-none hover:bg-green-800 tracking-widest rounded text-lg">GET
+                    IN TOUCH</button>
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="text-gray-600 body-font">
+  <div class="container px-5 py-8 mx-auto flex justify-between ">
+   <div class="">
+    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <li>
+            <a href="#"
+                class="block py-2 pr-4 pl-3 text-xl  rounded md:bg-transparent  md:p-0 dark:text-white"
+                aria-current="page">
+                Home
+            </a>
+        </li>
+        <li>
+            <a href="#"
+                class="block py-2 pr-4 pl-3 text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                About
+            </a>
+        </li>
+        <li>
+            <a href="#"
+                class="block py-2 pr-4 pl-3 text-xl text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                Services
+            </a>
+        </li>
+
+        <li>
+            <a href="#"
+                class="block py-2 pr-4 pl-3 text-xl text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                Contact
+            </a>
+        </li>
+    </ul>
+   </div>
+   <div class="">
+    <a href="/" class="flex items-center">
+        <span class="self-center text-2xl font-extrabold whitespace-nowrap tracking-widest ">
+            EARTH
+        </span>
+    </a>
+   </div>
+   <div class="">
+    ©2022 Earth. All right reserved.
+   </div>
+  </div>
+</footer>
+</body>
+
+</html>
