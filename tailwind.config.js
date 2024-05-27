@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('/src/img/banner.jpeg')",
-        'lastbackground': "url('/src/img/lastbackground.jpg')",
+        'hero-pattern': "url('./../src/img/banner.jpeg')",
+        'lastbackground': "url('./../src/img/lastbackground.jpg')",
       }
     },
   },
